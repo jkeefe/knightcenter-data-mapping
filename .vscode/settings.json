@@ -4,5 +4,6 @@
     ],
     "editor.fontSize": 14,
     "editor.minimap.enabled": false,
-    "cSpell.enabled": false
+    "cSpell.enabled": false,
+    "workbench.activityBar.iconClickBehavior": "focus"
 }
