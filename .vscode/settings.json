@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "cond"
-    ]
+    ],
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "cSpell.enabled": false
 }
