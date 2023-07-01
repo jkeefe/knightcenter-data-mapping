@@ -10,8 +10,7 @@
 		"no-cond-assign": 0,
 		"no-unused-vars": 1,
 		"no-extra-semi": "warn",
-		"semi": "warn",
-		"cSpell.diagnosticLevel": "Hint",
+		"semi": "warn"
 	},
 	"extends": "eslint:recommended",
 	"parserOptions": {
