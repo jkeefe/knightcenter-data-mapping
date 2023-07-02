@@ -5,5 +5,6 @@
     "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "cSpell.enabled": false,
-    "workbench.activityBar.iconClickBehavior": "focus"
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.colorTheme": "Sunburst"
 }
