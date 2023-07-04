@@ -10,7 +10,7 @@ const keys = Object.keys(values);
 const csvData = keys.map(key => [key, values[key]['2023']]);
 
 // Read the countries file
-const countryJson = fs.readFileSync('/tmp/countries.json');
+const countryJson = fs.readFileSync('./tmp/countries.json');
 const country_data = JSON.parse(countryJson);
 
 // Loop through the inflation data to join the country name to the country code
@@ -46,6 +46,6 @@ const csv = csvData.map(row => row.join(',')).join('\n');
 const csv_with_headers = "country,code,inflation_rate\n" + csv
 
 // Write the CSV data to a file
-fs.writeFileSync('inflation.csv', csv_with_headers);
+fs.writeFileSync('./data/inflation.csv', csv_with_headers);
 
 console.log('CSV file generated successfully.');

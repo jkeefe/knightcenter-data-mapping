@@ -1,0 +1,24 @@
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '*/15 * * * *'     # <-- Set your cron here (UTC), for syntax see https://crontab.guru/
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - uses: actions/checkout@master
+        with:
+            fetch-depth: 1
+
+      - name: Process data 
+        run: make all
+      
+      - name: Upload to S3
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          # More about secrets at: https://docs.github.com/en/actions/security-guides/encrypted-secrets
+        run: (cd ./data && aws s3 sync . s3://$AWS_S3_BUCKET/inflation-map --acl public-read --follow-symlinks --delete --region us-east-1)     # <-- remove "--delete" if you want to keep archived files
