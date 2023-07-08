@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: '*/15 * * * *'     # <-- Set your cron here (UTC), for syntax see https://crontab.guru/
+  #schedule:
+  # - cron: '15 12 1 * *'    # <-- Set your cron here (UTC), for syntax see https://crontab.guru/
 
 jobs:
   build:
@@ -11,6 +11,11 @@ jobs:
       - uses: actions/checkout@master
         with:
             fetch-depth: 1
+
+      # - name: Set up Python 3.x
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.x'
 
       - name: Process data 
         run: make all

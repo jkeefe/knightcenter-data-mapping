@@ -16,3 +16,22 @@ You'll also learn about starting and stopping your codespace, which I'm also goi
 
 - Go to [github.com/codespaces](https://github.com/codespaces)
 - Click _right on the title:_ "My class codespace"
+
+## Links & Resources
+
+### Week 1 - Video 1
+
+- Our source for the data is the International Monetary Fund, 
+    - Site: https://www.imf.org/external/datamapper/PCPIPCH@WEO/OEMDC/ADVEC/WEOWORLD
+    - They have an api: https://www.imf.org/external/datamapper/api/help 
+    - The inflation data file I want is this one: https://www.imf.org/external/datamapper/api/v1/PCPIPCH?periods=2023
+    - Country names file: https://www.imf.org/external/datamapper/api/v1/countries
+
+- I use a Chrome broswer pluging called [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh) to make my JSON files readable in the window.
+
+### Week 2 - Video 3
+
+- Drought monitor: https://droughtmonitor.unl.edu/CurrentMap.aspx
+- Census: - https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html or https://bit.ly/mapping-census
+
+
