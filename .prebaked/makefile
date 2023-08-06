@@ -18,10 +18,11 @@ downloads:
 freshdata:
 	node imf_to_csv.js
 
+all: directories downloads freshdata
+
 clean:
 	-rm -rf ./data
 	-rm -rf ./tmp
-
 
 
 droughtmap:
